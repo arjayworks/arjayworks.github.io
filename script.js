@@ -1,9 +1,9 @@
 function openCalendarModal() {
-  document.getElementById('calendarModal').style.display = 'flex';
+  document.getElementById('calendarModal').classList.remove('hidden');
   document.body.style.overflow = 'hidden';
 }
 
 function closeCalendarModal() {
-  document.getElementById('calendarModal').style.display = 'none';
-  document.body.style.overflow = 'auto';
+  document.getElementById('calendarModal').classList.add('hidden');
+  document.body.style.overflow = '';
 }
